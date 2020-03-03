@@ -8,4 +8,13 @@
     <string name="show_flags">Show flags</string>
     <string name="show_animation">Show animation</string>
     <string name="animated_cat">Animated cat</string>
+    <string name="confirmed">Confirmed</string>
+    <string name="recovered">Recovered</string>
+    <string name="dead">Dead</string>
+    <string name="_1_confirmed">+1 Confirmed</string>
+    <string name="_1_recovered">+1 Recovered</string>
+    <string name="_1_dead">+1 Dead</string>
+    <string name="_0">0</string>
+    <string name="refresh_data">Refresh Data</string>
+    <string name="coronavirus_background">CoronaVirus Background</string>
 </resources>
