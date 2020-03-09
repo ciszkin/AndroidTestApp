@@ -13,7 +13,7 @@ class AnimationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.animation_layout)
         animationImage.apply {
-            setBackgroundResource(R.drawable.cat_animation)
+            //setBackgroundResource(R.drawable.cat_animation)
             catsAnimation = background as AnimationDrawable
         }
 
