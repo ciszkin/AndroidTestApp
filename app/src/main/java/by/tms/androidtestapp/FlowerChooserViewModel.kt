@@ -14,7 +14,7 @@ class FlowerChooserViewModel : ViewModel() {
         return listOfFlowers.size
     }
 
-    fun getFlower(index: Int) : Flower {
+    fun getFlower(index: Int): Flower {
         return listOfFlowers[index]
     }
 }

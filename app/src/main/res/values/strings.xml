@@ -30,4 +30,7 @@
     <string name="add_flower_first">Add flower first!</string>
     <string name="nothing_to_remove">Nothing to remove!</string>
     <string name="flower_added_success">Flower successfully added!</string>
+    <string name="tap_me">Tap me!</string>
+    <string name="first_is_set">First fragment is already set!</string>
+    <string name="second_is_set">Second fragment is already set!</string>
 </resources>

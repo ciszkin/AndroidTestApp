@@ -73,6 +73,15 @@
             style="@style/HomeWork4ButtonTheme"
             app:layout_constraintTop_toBottomOf="@+id/addTopFragment" />
 
+        <TextView
+            android:id="@+id/counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_0"
+            app:layout_constraintBottom_toTopOf="@+id/addFlower"
+            app:layout_constraintEnd_toStartOf="@+id/removeTopFragment"
+            app:layout_constraintStart_toEndOf="@+id/addTopFragment" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

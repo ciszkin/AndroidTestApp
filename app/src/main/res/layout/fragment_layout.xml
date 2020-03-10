@@ -35,5 +35,14 @@
         app:layout_constraintTop_toBottomOf="@+id/infoCardFlowerName"
         android:hint="@string/flower_price"/>
 
+    <Button
+        android:id="@+id/buttonCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tap_me"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoCardFlowerPrice"
+        style="@style/HomeWork4ButtonTheme"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 

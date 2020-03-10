@@ -17,10 +17,7 @@ const val FLOWER_URL = "flower url"
 const val FLOWER_NAME = "flower name"
 const val FLOWER_PRICE = "flower price"
 
-class HomeWorkFourActivity : AppCompatActivity(), View.OnClickListener {
-
-    private var topFragment : FlowerFragment? = null
-    private var bottomFragment : FlowerFragment? = null
+class HomeWorkFourActivity : AppCompatActivity(), View.OnClickListener, FlowerFragment.CountListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,6 +29,7 @@ class HomeWorkFourActivity : AppCompatActivity(), View.OnClickListener {
         addFlower.setOnClickListener(this)
         topFragmentPlace.setOnClickListener(this)
         bottomFragmentPlace.setOnClickListener(this)
+
 
         val model = ViewModelProvider(this).get(FlowerChooserViewModel::class.java)
 
@@ -59,35 +57,45 @@ class HomeWorkFourActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(view: View?) {
         val model = ViewModelProvider(this).get(FlowerChooserViewModel::class.java)
+        val topFragment = supportFragmentManager.findFragmentById(R.id.topFragmentPlace)
+        val bottomFragment = supportFragmentManager.findFragmentById(R.id.bottomFragmentPlace)
 
         when(view?.id) {
             addTopFragment.id -> {
-                if(model.getSize() > 0) {
+                if(model.getSize() > 0 && topFragment == null) {
                     setTopFragment()
                 } else {
-                    Toast.makeText(this, R.string.add_flower_first, LENGTH_SHORT).show()
-                    Log.e("something","size: ${model.getSize()}")
+                    if(model.getSize() > 0) {
+                        Toast.makeText(this, R.string.first_is_set, LENGTH_SHORT).show()
+                    } else {
+                        Toast.makeText(this, R.string.add_flower_first, LENGTH_SHORT).show()
+                    }
                 }
 
             }
             removeTopFragment.id -> {
+
                 if (topFragment != null) {
-                    supportFragmentManager.beginTransaction().remove(topFragment as Fragment).commit()
+                    supportFragmentManager.beginTransaction().remove(topFragment).commit()
                 } else {
                     Toast.makeText(this, R.string.nothing_to_remove, LENGTH_SHORT).show()
                 }
             }
             addBottomFragment.id -> {
-                if(model.getSize() > 1) {
+                if(model.getSize() > 1 && bottomFragment == null) {
                     setBottomFragment()
                 } else {
-                    Toast.makeText(this, R.string.add_flower_first, LENGTH_SHORT).show()
+                    if(model.getSize() > 1) {
+                        Toast.makeText(this, R.string.second_is_set, LENGTH_SHORT).show()
+                    } else {
+                        Toast.makeText(this, R.string.add_flower_first, LENGTH_SHORT).show()
+                    }
                 }
 
             }
             removeBottomFragment.id -> {
                 if (bottomFragment != null) {
-                    supportFragmentManager.beginTransaction().remove(bottomFragment as Fragment).commit()
+                    supportFragmentManager.beginTransaction().remove(bottomFragment).commit()
                 } else {
                     Toast.makeText(this, R.string.nothing_to_remove, LENGTH_SHORT).show()
                 }
@@ -105,20 +113,18 @@ class HomeWorkFourActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
-    private fun setTopFragment() {
-        val model = ViewModelProvider(this).get(FlowerChooserViewModel::class.java)
+    override fun countClick() {
+        counter?.text = (counter.text.toString().toInt() + 1).toString()
+    }
 
-        topFragment = FlowerFragment()
+    private fun setTopFragment() {
+        val topFragment = FlowerFragment()
         supportFragmentManager.beginTransaction().replace(R.id.topFragmentPlace, topFragment as Fragment).commit()
-        (topFragment as FlowerFragment).setFlower(model.getFlower(0))
     }
 
     private fun setBottomFragment() {
-        val model = ViewModelProvider(this).get(FlowerChooserViewModel::class.java)
-
-        bottomFragment = FlowerFragment()
+        val bottomFragment = FlowerFragment()
         supportFragmentManager.beginTransaction().replace(R.id.bottomFragmentPlace, bottomFragment as Fragment).commit()
-        (bottomFragment as FlowerFragment).setFlower(model.getFlower(1))
     }
 
     private fun showInfoCard(index: Int) {
