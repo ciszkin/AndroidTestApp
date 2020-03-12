@@ -25,5 +25,10 @@ class MainActivity : AppCompatActivity() {
         buttonGoToHomeWork3.setOnClickListener {
             startActivity(Intent(this, HomeWorkThreeActivity::class.java))
         }
+
+        val buttonGoToHomeWork4 = button_homework4
+        buttonGoToHomeWork4.setOnClickListener {
+            startActivity(Intent(this, HomeWorkFourActivity::class.java))
+        }
     }
 }

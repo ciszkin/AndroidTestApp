@@ -17,4 +17,20 @@
     <string name="_0">0</string>
     <string name="refresh_data">Refresh Data</string>
     <string name="coronavirus_background">CoronaVirus Background</string>
+    <string name="homework_4">Homework #4</string>
+    <string name="add_1">Add 1</string>
+    <string name="add_2">Add 2</string>
+    <string name="remove_1">Remove 1</string>
+    <string name="remove_2">remove 2</string>
+    <string name="add_flower">Add flower</string>
+    <string name="flower_name">Flower name</string>
+    <string name="flower_image_url">Flower image URL</string>
+    <string name="flower_price">Flower price</string>
+    <string name="fill_all_fields">Please, fill all the required fields!</string>
+    <string name="add_flower_first">Add flower first!</string>
+    <string name="nothing_to_remove">Nothing to remove!</string>
+    <string name="flower_added_success">Flower successfully added!</string>
+    <string name="tap_me">Tap me!</string>
+    <string name="first_is_set">First fragment is already set!</string>
+    <string name="second_is_set">Second fragment is already set!</string>
 </resources>
