@@ -1,15 +1,15 @@
-package by.tms.androidtestapp
+package by.tms.androidtestapp.dz4
 
 import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Toast
 import android.widget.Toast.LENGTH_SHORT
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import by.tms.androidtestapp.R
 import kotlinx.android.synthetic.main.home_work_four_layout.*
 
 const val ADD_FLOWER = 0
@@ -66,9 +66,11 @@ class HomeWorkFourActivity : AppCompatActivity(), View.OnClickListener, FlowerFr
                     setTopFragment()
                 } else {
                     if(model.getSize() > 0) {
-                        Toast.makeText(this, R.string.first_is_set, LENGTH_SHORT).show()
+                        Toast.makeText(this,
+                            R.string.first_is_set, LENGTH_SHORT).show()
                     } else {
-                        Toast.makeText(this, R.string.add_flower_first, LENGTH_SHORT).show()
+                        Toast.makeText(this,
+                            R.string.add_flower_first, LENGTH_SHORT).show()
                     }
                 }
 
@@ -78,7 +80,8 @@ class HomeWorkFourActivity : AppCompatActivity(), View.OnClickListener, FlowerFr
                 if (topFragment != null) {
                     supportFragmentManager.beginTransaction().remove(topFragment).commit()
                 } else {
-                    Toast.makeText(this, R.string.nothing_to_remove, LENGTH_SHORT).show()
+                    Toast.makeText(this,
+                        R.string.nothing_to_remove, LENGTH_SHORT).show()
                 }
             }
             addBottomFragment.id -> {
@@ -86,9 +89,11 @@ class HomeWorkFourActivity : AppCompatActivity(), View.OnClickListener, FlowerFr
                     setBottomFragment()
                 } else {
                     if(model.getSize() > 1) {
-                        Toast.makeText(this, R.string.second_is_set, LENGTH_SHORT).show()
+                        Toast.makeText(this,
+                            R.string.second_is_set, LENGTH_SHORT).show()
                     } else {
-                        Toast.makeText(this, R.string.add_flower_first, LENGTH_SHORT).show()
+                        Toast.makeText(this,
+                            R.string.add_flower_first, LENGTH_SHORT).show()
                     }
                 }
 
@@ -97,12 +102,15 @@ class HomeWorkFourActivity : AppCompatActivity(), View.OnClickListener, FlowerFr
                 if (bottomFragment != null) {
                     supportFragmentManager.beginTransaction().remove(bottomFragment).commit()
                 } else {
-                    Toast.makeText(this, R.string.nothing_to_remove, LENGTH_SHORT).show()
+                    Toast.makeText(this,
+                        R.string.nothing_to_remove, LENGTH_SHORT).show()
                 }
             }
             addFlower.id -> {
                 val intent = Intent(this, AddFlowerActivity::class.java)
-                startActivityForResult(intent, ADD_FLOWER)
+                startActivityForResult(intent,
+                    ADD_FLOWER
+                )
             }
             topFragmentPlace.id -> {
                 showInfoCard(0)

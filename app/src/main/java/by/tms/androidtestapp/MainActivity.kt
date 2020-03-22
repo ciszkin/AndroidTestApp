@@ -3,6 +3,11 @@ package by.tms.androidtestapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import by.tms.androidtestapp.dz1.HomeWorkOneActivity
+import by.tms.androidtestapp.dz2.HomeWorkTwoActivity
+import by.tms.androidtestapp.dz3.HomeWorkThreeActivity
+import by.tms.androidtestapp.dz4.HomeWorkFourActivity
+import by.tms.androidtestapp.dz5.HomeWorkFiveActivity
 import kotlinx.android.synthetic.main.main_layout.*
 
 class MainActivity : AppCompatActivity() {
@@ -29,6 +34,11 @@ class MainActivity : AppCompatActivity() {
         val buttonGoToHomeWork4 = button_homework4
         buttonGoToHomeWork4.setOnClickListener {
             startActivity(Intent(this, HomeWorkFourActivity::class.java))
+        }
+
+        val buttonGoToHomeWork5 = button_homework5
+        buttonGoToHomeWork5.setOnClickListener {
+            startActivity(Intent(this, HomeWorkFiveActivity::class.java))
         }
     }
 }

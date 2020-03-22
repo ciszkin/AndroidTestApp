@@ -1,8 +1,9 @@
-package by.tms.androidtestapp
+package by.tms.androidtestapp.dz2
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import by.tms.androidtestapp.R
 import kotlinx.android.synthetic.main.home_work_two_layout.*
 
 class HomeWorkTwoActivity : AppCompatActivity() {

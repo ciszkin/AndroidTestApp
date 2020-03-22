@@ -4,22 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".dz2.HomeWorkTwoActivity">
+    tools:context=".dz5.HomeWorkFiveActivity">
 
-    <Button
-        android:id="@+id/showFlags"
+    <TextView
+        android:id="@+id/titleText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/show_flags"
+        android:text="@string/beer_snacks"
         android:layout_margin="16dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/showAnimation"
+    <androidx.recyclerview.widget.RecyclerView
+        android:tag="@string/portrait"
+        android:id="@+id/recyclerList"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/show_animation"
+        android:layout_height="0dp"
         android:layout_margin="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/showFlags" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

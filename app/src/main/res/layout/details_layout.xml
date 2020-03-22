@@ -4,18 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".dz2.AnimationActivity">
+    tools:context=".dz5.DetailsActivity">
 
-    <ImageView
-        android:id="@+id/animationImage"
-        android:contentDescription="@string/animated_cat"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toEndOf="parent"
+    <LinearLayout
+        android:id="@+id/portraitContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/cat_animation"
-        />
+        android:orientation="vertical"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

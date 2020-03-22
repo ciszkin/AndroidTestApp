@@ -1,14 +1,13 @@
-package by.tms.androidtestapp
+package by.tms.androidtestapp.dz4
 
 import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Toast
 import android.widget.Toast.LENGTH_SHORT
-import androidx.lifecycle.ViewModelProvider
+import by.tms.androidtestapp.R
 import kotlinx.android.synthetic.main.add_flower_layout.*
 
 class AddFlowerActivity : AppCompatActivity(), View.OnClickListener {
@@ -38,10 +37,12 @@ class AddFlowerActivity : AppCompatActivity(), View.OnClickListener {
                         price.clear()
                     }
                     setResult(Activity.RESULT_OK, answerIntent)
-                    Toast.makeText(this, R.string.flower_added_success, LENGTH_SHORT).show()
+                    Toast.makeText(this,
+                        R.string.flower_added_success, LENGTH_SHORT).show()
                     onBackPressed()
                 } else {
-                    Toast.makeText(this, R.string.fill_all_fields, LENGTH_SHORT).show()
+                    Toast.makeText(this,
+                        R.string.fill_all_fields, LENGTH_SHORT).show()
                 }
             }
         }

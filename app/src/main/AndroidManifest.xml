@@ -12,14 +12,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HomeWorkFourActivity"/>
-        <activity android:name=".InfoCardActivity" />
-        <activity android:name=".AddFlowerActivity" />
-        <activity android:name=".HomeWorkThreeActivity" />
-        <activity android:name=".AnimationActivity" />
-        <activity android:name=".HomeWorkTwoActivity" />
-        <activity android:name=".FlagsActivity" />
-        <activity android:name=".HomeWorkOneActivity" />
+        <activity android:name=".dz5.DetailsActivity"/>
+        <activity android:name=".dz5.HomeWorkFiveActivity" />
+        <activity android:name=".dz4.HomeWorkFourActivity" />
+        <activity android:name=".dz4.InfoCardActivity" />
+        <activity android:name=".dz4.AddFlowerActivity" />
+        <activity android:name=".dz3.HomeWorkThreeActivity" />
+        <activity android:name=".dz2.AnimationActivity" />
+        <activity android:name=".dz2.HomeWorkTwoActivity" />
+        <activity android:name=".dz2.FlagsActivity" />
+        <activity android:name=".dz1.HomeWorkOneActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

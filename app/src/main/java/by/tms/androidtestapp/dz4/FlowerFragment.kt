@@ -1,4 +1,4 @@
-package by.tms.androidtestapp
+package by.tms.androidtestapp.dz4
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import by.tms.androidtestapp.R
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.fragment_layout.*
 
