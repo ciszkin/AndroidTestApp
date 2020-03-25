@@ -1,7 +1,8 @@
-package by.tms.androidtestapp
+package by.tms.androidtestapp.dz1
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import by.tms.androidtestapp.R
 
 class HomeWorkOneActivity : AppCompatActivity() {
 

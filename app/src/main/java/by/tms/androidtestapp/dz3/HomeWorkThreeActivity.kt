@@ -1,10 +1,11 @@
-package by.tms.androidtestapp
+package by.tms.androidtestapp.dz3
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import by.tms.androidtestapp.R
 import kotlinx.android.synthetic.main.home_work_three_layout.*
 import kotlinx.coroutines.*
 

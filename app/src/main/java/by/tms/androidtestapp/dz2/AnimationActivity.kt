@@ -1,8 +1,9 @@
-package by.tms.androidtestapp
+package by.tms.androidtestapp.dz2
 
 import android.graphics.drawable.AnimationDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import by.tms.androidtestapp.R
 import kotlinx.android.synthetic.main.animation_layout.*
 
 private lateinit var catsAnimation: AnimationDrawable

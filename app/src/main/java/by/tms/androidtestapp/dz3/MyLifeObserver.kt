@@ -1,4 +1,4 @@
-package by.tms.androidtestapp
+package by.tms.androidtestapp.dz3
 
 import android.util.Log
 import androidx.lifecycle.Lifecycle

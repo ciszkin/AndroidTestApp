@@ -1,11 +1,10 @@
-package by.tms.androidtestapp
+package by.tms.androidtestapp.dz4
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import by.tms.androidtestapp.R
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.fragment_layout.*
 import kotlinx.android.synthetic.main.fragment_layout.infoCardFlowerName
 import kotlinx.android.synthetic.main.fragment_layout.infoCardFlowerPrice
 import kotlinx.android.synthetic.main.info_card_layout.*

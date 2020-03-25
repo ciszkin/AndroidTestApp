@@ -1,4 +1,4 @@
-package by.tms.androidtestapp
+package by.tms.androidtestapp.dz3
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
