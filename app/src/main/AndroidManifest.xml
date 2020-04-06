@@ -12,6 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+      
+        <activity android:name=".dz8.HomeWorkEightActivity"/>
+        <activity android:name=".dz7.HomeWorkSevenActivity" />
+        <activity android:name=".dz6.HomeWorkSixActivity" />
+        <activity android:name=".dz5.DetailsActivity" />
         <activity android:name=".dz5.DetailsActivity"/>
         <activity android:name=".dz5.HomeWorkFiveActivity" />
         <activity android:name=".dz4.HomeWorkFourActivity" />
@@ -29,6 +34,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:name=".dz8.RingtoneService"/>
+        <receiver android:name=".dz8.AlarmReceiver"/>
     </application>
 
 </manifest>

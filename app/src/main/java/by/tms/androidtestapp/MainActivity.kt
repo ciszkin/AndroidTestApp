@@ -8,6 +8,9 @@ import by.tms.androidtestapp.dz2.HomeWorkTwoActivity
 import by.tms.androidtestapp.dz3.HomeWorkThreeActivity
 import by.tms.androidtestapp.dz4.HomeWorkFourActivity
 import by.tms.androidtestapp.dz5.HomeWorkFiveActivity
+import by.tms.androidtestapp.dz6.HomeWorkSixActivity
+import by.tms.androidtestapp.dz7.HomeWorkSevenActivity
+import by.tms.androidtestapp.dz8.HomeWorkEightActivity
 import kotlinx.android.synthetic.main.main_layout.*
 
 class MainActivity : AppCompatActivity() {
@@ -39,6 +42,21 @@ class MainActivity : AppCompatActivity() {
         val buttonGoToHomeWork5 = button_homework5
         buttonGoToHomeWork5.setOnClickListener {
             startActivity(Intent(this, HomeWorkFiveActivity::class.java))
+        }
+
+        val buttonGoToHomeWork6 = button_homework6
+        buttonGoToHomeWork6.setOnClickListener {
+            startActivity(Intent(this, HomeWorkSixActivity::class.java))
+        }
+
+        val buttonGoToHomeWork7 = button_homework7
+        buttonGoToHomeWork7.setOnClickListener {
+            startActivity(Intent(this, HomeWorkSevenActivity::class.java))
+        }
+
+        val buttonGoToHomeWork8 = button_homework8
+        buttonGoToHomeWork8.setOnClickListener {
+            startActivity(Intent(this, HomeWorkEightActivity::class.java))
         }
     }
 }

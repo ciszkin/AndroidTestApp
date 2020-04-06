@@ -40,4 +40,22 @@
     <string name="snack_description">Snack description</string>
     <string name="portrait">portrait</string>
     <string name="landscape">landscape</string>
+    <string name="input_planet_name">Input planet name</string>
+    <string name="show_planet">show planet</string>
+    <string name="name">Name:</string>
+    <string name="planet">Planet</string>
+    <string name="radius_m">Radius, m:</string>
+    <string name="radius">radius</string>
+    <string name="mass_1_mass_of_earth">Mass (1 = mass of Earth):</string>
+    <string name="mass">mass</string>
+    <string name="homework_6">Homework #6</string>
+    <string name="cryptocurrencies">Cryptocurrencies</string>
+    <string name="homework_7">Homework #7</string>
+    <string name="usd_sign">$</string>
+    <string name="_1_hour">1 hour:</string>
+    <string name="percent">%</string>
+    <string name="homework_8">Homework #8</string>
+    <string name="set_alarm">Set alarm</string>
+    <string name="alarm_ringing">Alarm ringing!</string>
+
 </resources>
