@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="by.ciszkin.basicapp.ui.MainActivity">
+    <item
+        android:id="@+id/basicMap"
+        android:orderInCategory="100"
+        android:title="@string/normal_map"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/satelliteMap"
+        android:orderInCategory="100"
+        android:title="@string/satellite_map"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/satelliteMapExt"
+        android:orderInCategory="100"
+        android:title="@string/hybrid_map"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/topographicMap"
+        android:orderInCategory="100"
+        android:title="@string/terrain_map"
+        app:showAsAction="never" />
+</menu>
