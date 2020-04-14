@@ -38,6 +38,7 @@
         <activity android:name=".dz7.HomeWorkSevenActivity" />
         <activity android:name=".dz6.HomeWorkSixActivity" />
         <activity android:name=".dz5.DetailsActivity" />
+        <activity android:name=".dz5.DetailsActivity"/>
         <activity android:name=".dz5.HomeWorkFiveActivity" />
         <activity android:name=".dz4.HomeWorkFourActivity" />
         <activity android:name=".dz4.InfoCardActivity" />
